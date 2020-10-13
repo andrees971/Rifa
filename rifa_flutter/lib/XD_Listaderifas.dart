@@ -9,6 +9,10 @@ class XD_Listaderifas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: const Color(0xffe71f1f),
+        title: Text('Informacion de la rifa'),
+      ),
       backgroundColor: const Color(0xffffffff),
       body: Stack(
         children: <Widget>[
@@ -182,49 +186,6 @@ class XD_Listaderifas extends StatelessWidget {
                             _svg_7gx4u6,
                             allowDrawingOutsideViewBox: true,
                             fit: BoxFit.fill,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 412.0, 80.0),
-                    size: Size(412.0, 806.0),
-                    pinLeft: true,
-                    pinRight: true,
-                    pinTop: true,
-                    fixedHeight: true,
-                    child: Stack(
-                      children: <Widget>[
-                        Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 412.0, 80.0),
-                          size: Size(412.0, 80.0),
-                          pinLeft: true,
-                          pinRight: true,
-                          pinTop: true,
-                          pinBottom: true,
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: const Color(0xffe71f1f),
-                              border: Border.all(
-                                  width: 1.0, color: const Color(0xff707070)),
-                            ),
-                          ),
-                        ),
-                        Pinned.fromSize(
-                          bounds: Rect.fromLTWH(111.0, 16.0, 260.0, 34.0),
-                          size: Size(412.0, 80.0),
-                          pinRight: true,
-                          fixedWidth: true,
-                          fixedHeight: true,
-                          child: Text(
-                            'Rifas',
-                            style: TextStyle(
-                              fontFamily: 'Segoe UI',
-                              fontSize: 22,
-                              color: const Color(0xffffffff),
-                            ),
-                            textAlign: TextAlign.center,
                           ),
                         ),
                       ],

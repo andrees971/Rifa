@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:rifa_flutter/homeState.dart';
 
 class XD_Login extends StatelessWidget {
   XD_Login({
@@ -315,43 +316,27 @@ class XD_Login extends StatelessWidget {
                           size: Size(378.8, 743.5),
                           fixedWidth: true,
                           fixedHeight: true,
-                          child: Stack(
-                            children: <Widget>[
-                              Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 145.0, 48.0),
-                                size: Size(145.0, 48.0),
-                                pinLeft: true,
-                                pinRight: true,
-                                pinTop: true,
-                                pinBottom: true,
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(24.0),
-                                    color: const Color(0xffffffff),
-                                    border: Border.all(
-                                        width: 1.0,
-                                        color: const Color(0xff707070)),
-                                  ),
-                                ),
-                              ),
-                              Pinned.fromSize(
-                                bounds: Rect.fromLTWH(14.5, 10.0, 116.0, 27.0),
-                                size: Size(145.0, 48.0),
-                                pinLeft: true,
-                                pinRight: true,
-                                fixedHeight: true,
-                                child: Text(
-                                  'Iniciar Sesion',
+                          child: RaisedButton(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(24),
+                              side: BorderSide(color: Colors.black)
+                            ),
+                            color: const Color(0xfffffdfd),
+                            child: Text('Iniciar Sesion',
                                   style: TextStyle(
                                     fontFamily: 'Segoe UI',
-                                    fontSize: 20,
+                                    fontSize: 16,
                                     color: const Color(0xff000000),
                                   ),
                                   textAlign: TextAlign.center,
                                 ),
-                              ),
-                            ],
-                          ),
+                          onPressed: () {
+                                      Navigator.of(context)
+                                          .push(MaterialPageRoute(
+                                        builder: (context) => Home(),
+                                      ));
+                                    },
+                                  ),
                         ),
                         Pinned.fromSize(
                           bounds: Rect.fromLTWH(107.0, 577.5, 78.0, 78.0),

@@ -9,6 +9,10 @@ class XD_CrearRifa extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: const Color(0xffe71f1f),
+        title: Text('Incluye los detalles'),
+      ),
       backgroundColor: const Color(0xffffffff),
       body: Stack(
         children: <Widget>[
@@ -17,49 +21,6 @@ class XD_CrearRifa extends StatelessWidget {
             height: 775.0,
             child: Stack(
               children: <Widget>[
-                Pinned.fromSize(
-                  bounds: Rect.fromLTWH(0.0, 0.0, 412.0, 80.0),
-                  size: Size(412.0, 775.0),
-                  pinLeft: true,
-                  pinRight: true,
-                  pinTop: true,
-                  fixedHeight: true,
-                  child: Stack(
-                    children: <Widget>[
-                      Pinned.fromSize(
-                        bounds: Rect.fromLTWH(0.0, 0.0, 412.0, 80.0),
-                        size: Size(412.0, 80.0),
-                        pinLeft: true,
-                        pinRight: true,
-                        pinTop: true,
-                        pinBottom: true,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: const Color(0xffe71f1f),
-                            border: Border.all(
-                                width: 1.0, color: const Color(0xff707070)),
-                          ),
-                        ),
-                      ),
-                      Pinned.fromSize(
-                        bounds: Rect.fromLTWH(111.0, 16.0, 260.0, 34.0),
-                        size: Size(412.0, 80.0),
-                        pinRight: true,
-                        fixedWidth: true,
-                        fixedHeight: true,
-                        child: Text(
-                          'Incluye algunos detalles',
-                          style: TextStyle(
-                            fontFamily: 'Segoe UI',
-                            fontSize: 22,
-                            color: const Color(0xffffffff),
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
                 Pinned.fromSize(
                   bounds: Rect.fromLTWH(17.3, 275.0, 377.5, 37.5),
                   size: Size(412.0, 775.0),
